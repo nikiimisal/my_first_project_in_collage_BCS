@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Job Portal</title>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+
+    <style>
+      body{
+        background-image: url(logininfo.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height:100vh;
+        width:auto;
+      }
+      
+      input[type="submit"]{
+        background-color: #594c9b;
+        color:#fff;
+        padding: 10px 20px;
+        border:black;
+        border-radius: 5px;
+        cursor:pointer;
+      }
+      
+          </style>
+
+  </head>
+  <body>
+    <header>
+      <h1> Employee info</h1>
+        <nav>
+          <ul>
+            <li><a href="mainpage.html">Home</a></li>
+            <li><a href="joblist.html">job list</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="login.html">login</a></li>
+          </ul>
+        </nav>
+      
+    </header>
+    <main>
+      <form>
+        <fieldset>
+          <legend> *** Employee Information *** </legend>
+          <div>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div>
+            <label for="degree-type">degree</label>
+            <select id="degree-type" name="degree">
+              <option value="">--Select--</option>
+              <option value="1">bsc(comp)</option>
+              <option value="2">diploma in computer</option>
+              <option value="3">BE</option>
+              
+            </select>
+          </div>
+        </fieldset>
+        <fieldset>
+      
+          <h8> Resume</h8><br>
+          <br>
+          <div class="col-12 col-sm-6">
+            <input type="file" class="form-control bg-white">
+        </div>
+          <br>
+          <br>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <div>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+          </div>
+        </fieldset>
+       
+        <input type="Submit" value="Submit">
+      </form>
+      <br>
+      <br>
+    </main>
+    <br>
+  </body>
+</html>
